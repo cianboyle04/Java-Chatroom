@@ -70,7 +70,7 @@ public class Client extends JFrame implements Runnable {
     @Override
     public void run() {
         try {
-            client = new Socket("172.20.10.6", 9999);
+            client = new Socket("0.0.0.0", 9999);
             out = new PrintWriter(client.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
